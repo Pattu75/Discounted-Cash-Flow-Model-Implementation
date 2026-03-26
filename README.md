@@ -1,9 +1,35 @@
 # DCF Valuation Automation Platform | Python, React
 
-	•	Automated discounted cash flow valuation workflows from spreadsheet logic into a Python and React-based web app
-	•	Built interactive assumption controls for revenue growth, margins, capex, taxes, WACC, and terminal growth
-	•	Generated dynamic free cash flow forecasts, enterprise value, equity value, and sensitivity analysis dashboards
-	•	Reduced manual spreadsheet work and improved repeatability of valuation analysis
+## Overview
+
+This project is an interactive DCF valuation platform that converts spreadsheet-based valuation logic into a Python and React application. It allows users to adjust key assumptions, generate forecast schedules, compare perpetuity and exit-multiple valuation methods, run sensitivity analysis, and visualize valuation outputs in a dashboard-style interface.
+
+## Key Features
+
+- Interactive DCF dashboard with perpetuity and multiple-based valuation outputs
+- Workbook-style inputs sheet for valuation assumptions
+- Revenue, cost, income statement, working capital, depreciation, asset, tax, and UFCF schedules
+- Sensitivity analysis for WACC, terminal growth, and terminal multiple
+- Company/ticker input workflow for market-data-driven assumptions
+- Visual dashboard with charts and summary boxes
+
+## Tech Stack
+
+- Python
+- FastAPI
+- React
+- Recharts
+- AG Grid
+- yFinance
+
+## Architecture
+
+- **Backend:** FastAPI valuation engine and company data endpoints
+- **Frontend:** React dashboard with workbook-style tabs and analytics views
+- **Data Layer:** Static DCF model assumptions plus ticker-based market data integration
+
+
+## Screenshots
 
 <img width="3766" height="1986" alt="image" src="https://github.com/user-attachments/assets/8289b710-8db8-4e4e-a987-f5226b65a253" />
 
@@ -12,3 +38,10 @@
 
 
 <img width="3758" height="1866" alt="image" src="https://github.com/user-attachments/assets/a2e058bb-94bb-4827-ab12-1869a2c34681" />
+
+### Future improvements
+
+- Export valuation outputs to Excel and PDF
+- Deploy frontend and backend for live demo access
+- Add real financial statement ingestion
+- Extend ticker-based model prefill with historical revenue and EBITDA
